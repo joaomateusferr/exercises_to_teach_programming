@@ -8,12 +8,9 @@ int main()
     printf("insira um caracter\n");
     scanf("%c",&a);
 
-    if((a=='s')||(a=='n'))
-    {
+    if((a=='s')||(a=='n')) {
         printf("eh s ou n\n");
-    }
-    else
-    {
+    } else {
         printf("nao eh s ou n \n");
     }
 

@@ -3,39 +3,28 @@
 
 int main()
 {
-    int i;
-    float a,b,result;
-    char op;
+  int i;
+  float a, b, result;
+  char op;
 
-    printf("insira um numero a operacao e outro numero para saber o resultado\n\n");
-    scanf("%f%c%f",&a,&op,&b);
+  printf("Enter a number, an operation and another number to know the result!\n\n");
+  scanf("%f%c%f",&a,&op,&b);
 
-        if(op=='+')
-        {
-          result=a+b;
-        }
-        else
-        {
-            if(op=='-')
-            {
-              result=a-b;
-            }
-            else
-            {
-               if(op=='*')
-                {
-                  result=a*b;
-                }
-                else
-                    {
-                        result=a/b;
-                    }
-            }
+  if(op == '+') {
+    result = a+b;
+  } else {
+    if(op == '-') {
+      result = a-b;
+    } else {
+      if(op == '*') {
+        result = a*b;
+      } else {
+        result = a/b;
+      }
+    }
+  }
 
-        }
-
-
-                        printf("resultado = %.2f\n",result);
-
-    return 0;
+  printf("Result = %.2f\n",result);
+  
+  return 0;
 }
