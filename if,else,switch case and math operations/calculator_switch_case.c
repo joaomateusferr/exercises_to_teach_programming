@@ -4,32 +4,30 @@
 int main()
 {
     int i;
-    float a,b,result;
+    float a, b, result;
     char op;
 
-    printf("insira um numero a operacao e outro numero para saber o resultado\n\n");
+    printf("Enter a number, an operation and another number to know the result!\n\n");
     scanf("%f%c%f",&a,&op,&b);
 
-        switch(op)
-        {
+    switch(op) {
         case '+':
-            result=a+b;
+            result = a+b;
             break;
 
         case '-':
-            result=a-b;
+            result = a-b;
             break;
 
         case '*':
-            result=a*b;
+            result = a*b;
             break;
         case '/':
-            result=a/b;
+            result = a/b;
             break;
-        }
+    }
 
-
-        printf("resultado = %.2f\n",result);
+    printf("Result = %.2f\n",result);
 
     return 0;
 }

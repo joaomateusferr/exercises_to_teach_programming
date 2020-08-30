@@ -3,27 +3,27 @@
 
 int main()
 {
-      int l1, l2, l3;
+   int l1, l2, l3;
 
-      printf ("Informe o lado 1 do triangulo: ");
-      scanf ("%d", &l1);
-      printf ("Informe o lado 2 do triangulo: ");
-      scanf ("%d", &l2);
-      printf ("Informe o lado 3 do triangulo: ");
-      scanf ("%d", &l3);
+   printf ("Enter side 1 of the triangle: ");
+   scanf ("%d", &l1);
 
-      if (l1 + l2 >= l3 && l1 + l3 >= l2 && l2 + l3 >= l1)
-         {
-          if (l1 == l2 && l2 == l3 && l3 == l1){
-             printf ("Triangulo Equilatero");
-             }
-          else if (l1 == l2 || l2 == l3 || l3 == l1){
-             printf ("Triangulo Isosceles");
-             }
-          else if (l1 != l2 && l2 != l3 && l3 != l1){
-             printf ("Triangulo Escaleno");
-             }
-         }
+   printf ("Enter side 2 of the triangle: ");
+   scanf ("%d", &l2);
+   
+   printf ("Enter side 3 of the triangle: ");
+   scanf ("%d", &l3);
 
-    return 0;
+   if (l1 + l2 >= l3 && l1 + l3 >= l2 && l2 + l3 >= l1) {
+
+      if (l1 == l2 && l2 == l3 && l3 == l1) {
+         printf ("Equilateral triangle");
+      } else if (l1 == l2 || l2 == l3 || l3 == l1) {
+         printf ("Isosceles triangle");
+      } else if (l1 != l2 && l2 != l3 && l3 != l1) {
+         printf ("Scalene triangle");
+      }
+   }
+   
+   return 0;
 }

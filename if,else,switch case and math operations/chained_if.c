@@ -3,28 +3,23 @@
 
 int main()
 {
-    float salario,reajuste;
+    float salary, readjustment;
 
-    printf("insira o salario\n");
-    scanf("%f",&salario);
+    printf("Enter salary amount!\n");
+    scanf("%f",&salary);
 
-    if(salario<500)
-    {
-        reajuste=salario*0.15;
-    }
-    else
-    {
-        if(salario<1000)
-        {
-            reajuste=salario*0.1;
-        }
-        else
-        {
-            reajuste=salario*0.05;
+    if(salary < 500) {
+        readjustment = salary*0.15;
+    } else {
+        if(salary < 1000) {
+            readjustment = salary*0.1;
+        } else {
+            readjustment = salary*0.05;
         }
     }
 
-    printf("o reajuste do salario eh R$%0.2f",reajuste);
+    printf("The salary readjustment is $%0.2f\n",readjustment);
+    printf("The new salary is $%0.2f\n",salary+readjustment);
 
     return 0;
 }
