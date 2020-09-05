@@ -3,20 +3,19 @@
 
 #define MAX 3
 
-int main()
-{
+int main() {
 
-    int a[20],b[20],d[20],i;
-    char c[20];
+    int a[MAX], b[MAX], d[MAX], i;
+    char c[MAX];
 
-    for(i=0;i<MAX;i++)
-    {
+    for(i = 0 ; i < MAX ; i++) {
+
         scanf("%i",&a[i]);
         scanf("%i",&b[i]);
         scanf("%s",&c[i]);
 
-         switch(c[i])
-        {
+        switch(c[i]) {
+
         case '+':
             d[i]=a[i]+b[i];
             printf("%i\n",d[i]);
@@ -33,16 +32,12 @@ int main()
             break;
 
         case '/':
-            if(b[i]!=0)
-            {
+            if(b[i]!=0) {
                 d[i]=a[i]/b[i];
                 printf("%i\n",d[i]);
+            } else {
+                printf("Erro\n");
             }
-            else
-            {
-                printf("erro\n");
-            }
-
             break;
         }
     }

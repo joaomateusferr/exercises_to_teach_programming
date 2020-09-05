@@ -16,7 +16,7 @@ int main()
     /*
     Using do while I force at least one interaction to happen
     do while -> performs the operation then validates the condition
-    while ->validates the condition then executes the operation
+    while -> validates the condition then executes the operation
     */
 
     do {

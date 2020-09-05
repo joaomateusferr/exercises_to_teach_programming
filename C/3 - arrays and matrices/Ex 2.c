@@ -1,24 +1,22 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-#define MAX 5
+#define MAX 5 
 
-int main()
-{
+int main() {
 
-    int a[20],b[20],c[20],d[20],i,soma=0;
+    int a[MAX], i, sum=0;
 
-    for(i=0;i<MAX;i++)
-    {
+    for(i = 0 ; i < MAX ; i++) {
         scanf("%i",&a[i]);
+        //sum = sum +a[i]; => you can make the sum at the same time as filling in the vector to save processing power and decrease the complexity of the code but it is not the goal for now
     }
 
-    for(i=0;i<MAX;i++)
-    {
-        soma=soma+a[i];
+    for(i = 0 ; i < MAX ; i++){
+        sum = sum + a[i];
     }
 
-    printf("a soma eh %i",soma);
+    printf("The sum of the vector values is %i",sum);
 
     return 0;
 }

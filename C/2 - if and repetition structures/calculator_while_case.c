@@ -9,7 +9,7 @@ int main() {
     /*
     con is initialized with y to make at least one interaction occur, but it can also be done using do while
     do while -> performs the operation then validates the condition
-    while ->validates the condition then executes the operation
+    while -> validates the condition then executes the operation
     */
 
     printf("Enter a number, an operation and another number to know the result!\n\n");
