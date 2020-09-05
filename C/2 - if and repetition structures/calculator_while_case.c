@@ -4,7 +4,13 @@
 int main() {
 
     float a, b, result;
-    char op, con = 'y'; //con is initialized with y to make at least one interaction occur, but it can also be done using do while
+    char op, con = 'y'; 
+    
+    /*
+    con is initialized with y to make at least one interaction occur, but it can also be done using do while
+    do while -> performs the operation then validates the condition
+    while ->validates the condition then executes the operation
+    */
 
     printf("Enter a number, an operation and another number to know the result!\n\n");
 
