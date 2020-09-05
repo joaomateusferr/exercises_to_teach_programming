@@ -15,6 +15,7 @@ int main() {
         scanf("%f%c%f",&a,&op,&b);
 
         switch(op) {
+
         case '+':
             result=a+b;
             break;
@@ -27,10 +28,14 @@ int main() {
             result=a*b;
             break;
         case '/':
-            result=a/b;
+            if(b != 0) {
+            result = a/b;
+            } else {
+                printf("Erro\n");
+                continue;
+            }
             break;
         }
-
 
         printf("Result = %.2f\n",result);
     }
