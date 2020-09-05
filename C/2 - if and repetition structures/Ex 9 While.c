@@ -3,18 +3,18 @@
 
 int main()
 {
-    printf("insira o tipo de vinho\n");
+    printf("Insert the wine type!\n");
 
-    int i,tinto=0,branco=0,rose=0,total=0;
-    float porr,porb,port;
-    char tipo;
+    int i, tinto = 0, branco = 0, rose = 0, total = 0;
+    float porr, porb, port;
+    char type;
 
-    do
-    {
+    do {
+
         fflush(stdin);
-        scanf("%c",&tipo);
+        scanf("%c",&type);
 
-        switch(tipo){
+        switch(type){
 
             case 't':
                 tinto++;
@@ -32,16 +32,15 @@ int main()
                 break;
 
             default:
-
-                printf("invalido\n");
+                printf("Invalid\n");
                 break;
         }
 
-    }while(tipo!='f');
+    }while(type != 'f');
 
-    port=(tinto*100)/total;
-    porb=(branco*100)/total;
-    porr=(rose*100)/total;
+    port = (tinto*100)/total;
+    porb = (branco*100)/total;
+    porr = (rose*100)/total;
 
     printf("tinto %.2f%%\nbranco %.2f%%\nrose %.2f%%\n",port,porb,porr);
 
