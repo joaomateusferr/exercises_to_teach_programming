@@ -1,23 +1,23 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-int main()
-{
-    int a = 0;
+int main() {
 
-    printf("insira um numero\n");
+    int a;
+
+    printf("Insert a number\n");
     scanf("%i",&a);
 
     if(a > 0) {
-        printf("eh positivo\n");
+        printf("It's positive\n");
     }
 
     if(a < 0) {
-        printf("eh negativo\n");
+        printf("It's negative\n");
     }
 
     if(a == 0) {
-        printf("eh igual a 0\n");
+        printf("It's zero\n");
     }
 
     return 0;

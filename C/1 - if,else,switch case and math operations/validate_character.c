@@ -1,17 +1,17 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-int main()
-{
-    char a=0;
+int main() {
 
-    printf("insira um caracter\n");
-    scanf("%c",&a);
+    char c;
 
-    if((a=='s')||(a=='n')) {
-        printf("eh s ou n\n");
+    printf("Insert a character\n");
+    scanf("%c",&c);
+
+    if(c == 's' || c == 'n') {
+        printf("It's not s or n\n");
     } else {
-        printf("nao eh s ou n \n");
+        printf("It's not s or n\n");
     }
 
     return 0;
