@@ -1,21 +1,20 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-int main()
-{
+int main() {
+
     int i;
-    float a,b,result;
+    float a, b, result;
     char op;
 
-    printf("insira um numero a operacao e outro numero para saber o resultado\n\n");
+    printf("Enter a number, an operation and another number to know the result!\n\n");
 
-    for(i=1;i<3;i++)
-    {
+    for(i = 1 ; i < 3 ; i++) {
 
+        fflush(stdin);
         scanf("%f%c%f",&a,&op,&b);
 
-        switch(op)
-        {
+        switch(op) {
         case '+':
             result=a+b;
             break;
@@ -33,7 +32,7 @@ int main()
         }
 
 
-        printf("resultado = %.2f\n",result);
+        printf("Result = %.2f\n",result);
     }
 
 
