@@ -16,7 +16,7 @@ int main() {
 
         printf("%i/%i + ",j,i);
 
-        s = s + ((float)j / (float)i);
+        s = s + ((float)j / (float)i); //(float)variable -> changing an variable of int data type into float to take into account the rest of the division in the sum
         j = j + 2;
     }
 
