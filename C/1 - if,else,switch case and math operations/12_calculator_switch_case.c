@@ -23,7 +23,12 @@ int main() {
             result = a*b;
             break;
         case '/':
-            result = a/b;
+            if(b != 0) {
+                result = a/b;
+            } else {
+                printf("Erro\n");
+                return 0;
+            }
             break;
     }
 

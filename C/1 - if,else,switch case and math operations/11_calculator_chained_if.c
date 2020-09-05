@@ -19,7 +19,12 @@ int main() {
       if(op == '*') {
         result = a*b;
       } else {
-        result = a/b;
+        if(b != 0) {
+          result = a/b;
+        } else {
+          printf("Erro\n");
+          return 0;
+        }
       }
     }
   }

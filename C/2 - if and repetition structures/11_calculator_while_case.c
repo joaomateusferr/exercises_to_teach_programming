@@ -4,13 +4,7 @@
 int main() {
 
     float a, b, result;
-    char op, con = 'y'; 
-    
-    /*
-    con is initialized with y to make at least one interaction occur, but it can also be done using do while
-    do while -> performs the operation then validates the condition
-    while -> validates the condition then executes the operation
-    */
+    char op, con = 'y'; //con is initialized with y to make at least one interaction occur, but it can also be done using do while
 
     printf("Enter a number, an operation and another number to know the result!\n\n");
 
@@ -19,8 +13,8 @@ int main() {
         fflush(stdin);
         scanf("%f%c%f",&a,&op,&b);
 
-        switch(op)
-        {
+        switch(op) {
+
         case '+':
             result=a+b;
             break;
@@ -34,7 +28,12 @@ int main() {
             break;
 
         case '/':
-            result=a/b;
+            if(b != 0) {
+            result = a/b;
+            } else {
+                printf("Erro\n");
+                continue;
+            }
             break;
         }
 
