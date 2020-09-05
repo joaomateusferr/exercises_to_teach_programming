@@ -1,9 +1,9 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-int main()
-{
-  int a=0, b=0, c=0, aux=0;
+int main() {
+  
+  int a, b, c, aux;
 
   printf("Enter 3 numbers!\n");
   scanf("%i%i%i",&a,&b,&c);

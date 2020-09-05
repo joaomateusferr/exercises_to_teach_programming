@@ -1,9 +1,9 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-int main()
-{
-    float c = 0, f = 0;
+int main(){
+    
+    float c, f;
 
     printf("Enter the temperature in fahrenheit\n");
     scanf("%f",&f);

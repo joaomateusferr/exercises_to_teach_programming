@@ -1,8 +1,8 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-int main()
-{
+int main() {
+   
    int l1, l2, l3;
 
    printf ("Enter side 1 of the triangle: ");

@@ -1,8 +1,8 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-int main()
-{
+int main() {
+    
     float salary, readjustment;
 
     printf("Enter salary amount!\n");
