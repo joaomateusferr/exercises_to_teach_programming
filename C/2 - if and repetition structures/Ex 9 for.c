@@ -1,3 +1,7 @@
+/*
+Make an algorithm that allows a survey of the wine stock of a cellar, using as input data types of wine, being: 'R' for red, 'W' for white and 'RW' for rose .
+Specify the percentage of each type over the grand total of wines.
+*/
 #include <stdio.h>
 #include <stdlib.h>
 
@@ -5,8 +9,8 @@ int main() {
 
     printf("Insert the wine type!\n");
 
-    int i, tinto = 0, branco = 0, rose = 0,total = 0;
-    float porr, porb, port;
+    int i, r = 0, w = 0, rw = 0, total = 0;
+    float porr, porw, porrw;
     char type;
 
     for(i = 0 ; i < 10 ; i++) {
@@ -16,18 +20,18 @@ int main() {
 
         switch(type) {
 
-            case 't':
-                tinto++;
-                total++;
-                break;
-
-            case 'b':
-                branco++;
-                total++;
-                break;
-
             case 'r':
-                rose++;
+                r++;
+                total++;
+                break;
+
+            case 'w':
+                w++;
+                total++;
+                break;
+
+            case 'rw':
+                rw++;
                 total++;
                 break;
 
@@ -38,13 +42,13 @@ int main() {
 
     }
 
-    port = (tinto*100)/total;
-    porb = (branco*100)/total;
-    porr = (rose*100)/total;
+    porr = (r*100)/total;
+    porw = (w*100)/total;
+    porrw = (rw*100)/total;
 
-    printf("tinto %.2f%%\nbranco %.2f%%\nrose %.2f%%\n",port,porb,porr);
-
-
+    printf("Red %.2f%%\n
+            White %.2f%%\n
+            Rose %.2f%%\n",porr,porw,porrw);
 
     return 0;
 }
