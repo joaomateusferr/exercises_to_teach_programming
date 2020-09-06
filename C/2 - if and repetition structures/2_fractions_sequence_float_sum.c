@@ -12,7 +12,7 @@ int main() {
     int i, j = 1;
     float s = 0;
 
-    for(i = 1 ; i < 51 ; i++) {
+    for(i = 1; i < 51; i++) {
 
         printf("%i/%i + ",j,i);
 

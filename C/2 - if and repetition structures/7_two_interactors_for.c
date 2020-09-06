@@ -10,7 +10,7 @@ int main()
 {
     int m, j, year = 0;
 
-    for(m = 150, j = 110 ; j <= m ; m = m + 2, j = j + 3) {
+    for(m = 150, j = 110; j <= m; m = m + 2, j = j + 3) {
         printf("%i %0.2f %0.2f\n", year,m/100.0,j/100.0);
         year++;
     }
