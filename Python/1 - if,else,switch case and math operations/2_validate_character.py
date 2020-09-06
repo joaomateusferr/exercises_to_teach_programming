@@ -1,5 +1,6 @@
 c = raw_input('Insert a character: ')
-if c in ('y', 'n'):
-    print("It's not y or n")
+
+if c == 'y' or c == 'n':
+    print("It's y or n")
 else:
     print("It's not y or n")

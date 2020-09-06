@@ -10,15 +10,13 @@ int main() {
 
     if(a > 0) {
         printf("It's positive\n");
+    } else {
+        if(a < 0) {
+            printf("It's negative\n");
+        } else{
+            printf("It's zero\n");
+        }
     }
-
-    if(a < 0) {
-        printf("It's negative\n");
-    }
-
-    if(a == 0) {
-        printf("It's zero\n");
-    }
-
+    
     return 0;
 }

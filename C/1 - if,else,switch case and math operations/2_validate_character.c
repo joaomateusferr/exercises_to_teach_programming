@@ -9,7 +9,7 @@ int main() {
     scanf("%c",&c);
 
     if(c == 's' || c == 'n') {
-        printf("It's not s or n\n");
+        printf("It's s or n\n");
     } else {
         printf("It's not s or n\n");
     }
