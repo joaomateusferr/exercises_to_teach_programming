@@ -8,7 +8,7 @@ int main() {
     int a[MAX], b[MAX], d[MAX], i;
     char c[MAX];
 
-    for(i = 0 ; i < MAX ; i++) {
+    for(i = 0; i < MAX; i++) {
 
         scanf("%i",&a[i]);
         scanf("%i",&b[i]);

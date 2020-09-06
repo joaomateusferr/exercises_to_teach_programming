@@ -8,7 +8,7 @@ int main() {
     scanf("%i",&n1);
     scanf("%i",&n2);
 
-    for(i = 1 ; i < n1 + 1 ; i++) {
+    for(i = 1; i < n1 + 1; i++) {
         sum = sum + n2;
     }
 

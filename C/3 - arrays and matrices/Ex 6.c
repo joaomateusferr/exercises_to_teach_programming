@@ -11,16 +11,16 @@ int main()
     int mat[MAX][MAX], i, j, sum=0;
 
     //interacting the matrix positions and assigning values to them
-    for(i = 0 ; i < MAX ; i++) {
+    for(i = 0; i < MAX; i++) {
 
-        for(j = 0 ; j < MAX ; j++) {
+        for(j = 0; j < MAX; j++) {
             scanf("%i",&mat[i][j]);
         }
     }
 
-    for(i = 0 ; i < MAX ; i++) {
+    for(i = 0; i < MAX; i++) {
 
-        for(j=0 ; j<MAX ; j++) {
+        for(j=0; j<MAX; j++) {
 
             if(i + j > MAX-1) { //below the main diagonal
                 sum = sum + mat[i][j];
@@ -33,9 +33,9 @@ int main()
     }
     
     //interacting the matrix positions and printing the content
-    for(i=0 ; i < MAX ; i++) {
+    for(i=0; i < MAX; i++) {
 
-        for( j = 0 ; j < MAX ; j++) {
+        for( j = 0; j < MAX; j++) {
             printf("%i ",mat[i][j]);
         }
         printf("\n");
