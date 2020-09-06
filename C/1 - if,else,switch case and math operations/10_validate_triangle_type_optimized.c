@@ -1,35 +1,28 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-int main()
-{
-    int a,b,c;
+int main() {
 
-    printf("insira os lados dos triangulo\n");
+    int a, b, c;
+
+    printf("Enter sides of the triangle\n");
     scanf("%i",&a);
     scanf("%i",&b);
     scanf("%i",&c);
 
-    if((a<b+c)&&(b<a+c)&&(c<a+b))
-    {
-        if((a==b)&&(b==c))
-        {
-            printf("triangulo equilatero\n");
-        }
-        else
-        {
-            if((a!=b)&&(b!=c))
-            {
-                printf("triangulo escaleno\n");
-            }
-            else
-            {
-                printf("triangulo isosceles\n");
+    if(a < b + c && b < a + c && c < a + b) {
+
+        if(a == b && b == c) {
+            printf("Equilateral triangle\n");
+        } else {
+
+            if(a != b && b != c) {
+                printf("Scalene triangle\n");
+            } else {
+                printf("Isosceles triangle\n");
             }
         }
-    }
-    else
-    {
+    } else {
         printf("não é trinagulo\n");
     }
 
