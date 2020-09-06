@@ -2,31 +2,25 @@
 #include <stdlib.h>
 
 int main() {
-  
-  int a, b, c, aux;
 
-  printf("Enter 3 numbers!\n");
-  scanf("%i%i%i",&a,&b,&c);
+  int a, b, c, greater;
 
-  if(a > c) {
-    aux=a;
-    a=c;
-    c=aux;
+  printf("insira 3 numeros\n");
+  scanf("%i",&a);
+  scanf("%i",&b);
+  scanf("%i",&c);
+
+  greater=a;
+
+  if(b > greater) {
+    greater = b;
   }
 
-  if(b > c) {
-    aux=b;
-    b=c;
-    c=aux;
+  if(c > greater) {
+    greater = c;
   }
 
-  if(a > b) {
-    aux=a;
-    a=b;
-    b=aux;
-  }
+  printf("%i is the greater",greater);
 
-  printf("%i is the biggest number",c);
-  
   return 0;
 }
