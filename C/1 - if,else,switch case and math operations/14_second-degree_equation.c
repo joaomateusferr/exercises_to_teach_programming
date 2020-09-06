@@ -1,43 +1,36 @@
 #include <stdio.h>
 #include <stdlib.h>
-#include <math.h>
+#include <math.h> //add to use sqrt
 
-int main()
-{
-    float a,b,c,delta,x1,x2;
+int main() {
 
-    printf("insira os valores de a b e c de uma equacao do 2 grau\n");
+    float a, b, c, delta, x1, x2;
 
-    printf("insira o valor de a\n");
+    printf("Enter the values of a b and c from a 2 degree equation\n");
+
+    printf("Enter the a value\n");
     scanf("%f",&a);
 
-    printf("insira o valor de b\n");
+    printf("Enter the b value\n");
     scanf("%f",&b);
 
-    printf("insira o valor de c\n");
+    printf("Enter the c value\n");
     scanf("%f",&c);
 
-    printf("\nsua equacao eh %gx2 + %gx+ %g\n",a,b,c);
+    printf("\nYour equation is: %gx2 + %gx+ %g\n",a,b,c);
 
     delta=(b*b)-(4*a*c);
 
     x1=((-b)+sqrt(delta))/(2*a);
     x2=((-b)-sqrt(delta))/(2*a);
 
-    if(delta>0)
-    {
+    if(delta > 0) {
         printf("x1 = %0.2f\nx2 = %0.2f\n\n",x1,x2);
-    }
-
-    else
-    {
-        if(delta==0)
-        {
+    } else {
+        if(delta == 0) {
             printf("x1 = x2 = %g\n",x1);
-        }
-        else
-        {
-             printf("nao ha raiz\n");
+        } else {
+             printf("There is no root\n");
         }
     }
 
