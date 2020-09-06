@@ -1,5 +1,5 @@
 /*
-Make an algorithm that reads a matrix of reals of order 10x10, divide each element of a line of the matrix by the element of the main diagonal of this line, and show the modified matrix.
+Make an algorithm that reads a matrix 10x10, divide each element of a line of the matrix by the element of the main diagonal of this line, and show the modified matrix.
 */
 #include <stdio.h>
 #include <stdlib.h>
