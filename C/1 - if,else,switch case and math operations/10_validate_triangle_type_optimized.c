@@ -23,7 +23,7 @@ int main() {
             }
         }
     } else {
-        printf("não é trinagulo\n");
+        printf("It's not a triangle\n");
     }
 
     return 0;

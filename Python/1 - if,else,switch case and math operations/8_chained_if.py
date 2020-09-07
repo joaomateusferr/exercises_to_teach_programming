@@ -10,7 +10,7 @@ def main():
         else:
             readjustment = salary*0.05
 
-    print("The salary readjustment is $" + str(round(float(readjustment),2)))
-    print("The new salary is $" + str(round(float(salary + readjustment),2)))
+    print("The salary readjustment is $" + str(round(readjustment,2)))
+    print("The new salary is $" + str(round(salary + readjustment,2)))
 
 main()
