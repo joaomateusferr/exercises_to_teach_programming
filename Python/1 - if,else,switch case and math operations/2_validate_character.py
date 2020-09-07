@@ -1,6 +1,10 @@
-c = raw_input('Insert a character: ')
+def main():
 
-if c == 'y' or c == 'n':
-    print("It's y or n")
-else:
-    print("It's not y or n")
+    c = input('Insert a character: ')
+
+    if c == 'y' or c == 'n':
+        print("It's y or n")
+    else:
+        print("It's not y or n")
+
+main()

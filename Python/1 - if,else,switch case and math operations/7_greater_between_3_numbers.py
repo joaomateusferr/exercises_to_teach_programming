@@ -1,15 +1,19 @@
-print("Enter 3 numbers!")
+def main():
+    
+    print("Enter 3 numbers!")
 
-a = int(input())
-b = int(input())
-c = int(input())
+    a = int(input())
+    b = int(input())
+    c = int(input())
 
-greater = a
+    greater = a
 
-if b > greater:
-    greater = b
+    if b > greater:
+        greater = b
 
-if c > greater:
-    greater = c
+    if c > greater:
+        greater = c
 
-print(str(greater) + " is the greater")
+    print(str(greater) + " is the greater")
+
+main()
